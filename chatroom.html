@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LetsChat</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="btn btn-danger" onclick="logout()">Logout</button>
+	<center>
+		<h1 class="header">	
+			LetsChat
+		</h1>
+		<h3 id="user_name" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>#Add Room:</label>
+			<input type="text" id="room_name" class="form-control" placeholder="#roomname">
+		</div>
+		<button class="btn btn-success" onclick="addRoom()">#AddRoom</button>
+		<h3 class="color_white">#POPULARROOMS</h3>
+		<div id="output"></div>
+	</center>
+</div>
+<script src="chatroom.js"></script>
+</body>
+</html>
